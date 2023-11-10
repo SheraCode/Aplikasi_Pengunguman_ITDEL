@@ -1,0 +1,27 @@
+<table id="example2" class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th>Judul</th>
+      <th>Deskripsi</th>
+      <th>Thumbnial</th>
+      <th>Aksi</th>
+    </tr>
+    </thead>
+    <tbody>
+        <% for(let i = 0; i < berita.length; i++) { %>
+    <tr>
+        <td><%= berita[i].title %></td>
+        <td><%= berita[i].description %></td>
+        <td>
+            <img src="images/<%= berita[i].thumbnial %>" alt="Thumbnial" width="200px">
+        </td>
+        <td>
+            <form action="/berita/delete/<%= berita[i]._id %>?_method=DELETE" method="post">
+                <a href="/berita/edit/<%= berita[i]._id %>" class="btn btn-info btn-sm"><i class="fas fa-pencil-alt"></i> Ubah</a>
+                <button class="btn btn-danger btn-sm"><i class="fas fa-trash-alt"></i> Hapus</button>
+            </form>
+        </td>
+    </tr>
+    <% } %>
+    </tbody>
+  </table>

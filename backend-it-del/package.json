@@ -1,0 +1,14 @@
+{
+  "name": "backend-it-del",
+  "version": "1.0.0",
+  "description": "backend aplikasi Institut Teknologi Del",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johannes Bastian Jasa Sipayung",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
